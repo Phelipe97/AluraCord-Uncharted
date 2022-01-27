@@ -99,7 +99,7 @@ export default function PaginaInicial() {
                                 setUsername(valor);
                             }}*/}
                         
-                        />
+                        
                         <TextField
                             value ={username} 
                             onChange={function (event) {
