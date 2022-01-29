@@ -38,7 +38,7 @@ function Titulo(props) {
 
 export default function PaginaInicial() {
     //const username = 'peas';
-    const [username, setUsername]= React.useState('');
+    const [username, setUsername]= React.useState('Phelipe97');
     const roteamento = useRouter();
   
 
@@ -74,8 +74,8 @@ export default function PaginaInicial() {
                         onSubmit={function (infosDoEvento) {
                             infosDoEvento.preventDefault()
                             console.log('Alguém submeteu o form');
-                            window.location.href = '/chat';
-                            roteamento.push('/chat');
+                            //window.location.href = '/chat';
+                            roteamento.push(`/chat?username=${username}`);
                         }}
                         styleSheet={{
                             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
